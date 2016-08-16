@@ -39,6 +39,9 @@
     .fp-controlArrow{
         opacity:0.2
     }
+    #fp-nav ul li a span, .fp-slidesNav ul li a span{
+        background: #063
+    }
 
     @media screen and (max-width: 600px) {
         .section{
@@ -96,8 +99,11 @@
     $(function(){
         $("#wrap").fullpage({
             sectionsColor:["#fff","#0a6","#eee","#6a0"],
-            loopBottom:!0
-        })
+            slidesNavigation: true,
+            navigation: true,
+            navigationPosition: 'right'//,
+            //navigationTooltips: ['First page', 'Second page', 'Third and last page']
+        });
     });
     </script>
 </body>
